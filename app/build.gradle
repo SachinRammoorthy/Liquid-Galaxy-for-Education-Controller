@@ -30,9 +30,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-        debug {
-            signingConfig signingConfigs.DebugSignIn
-        }
+        //debug {
+          //  signingConfig signingConfigs.DebugSignIn
+        //}
     }
     buildToolsVersion '28.0.2'
     compileOptions {
@@ -45,6 +45,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation(name: 'uribeacon-library-release', ext: 'aar')
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:mediarouter-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'

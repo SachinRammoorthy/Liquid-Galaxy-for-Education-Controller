@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.text.method.PasswordTransformationMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,7 +21,7 @@ import com.lglab.merino.lgxeducontroller.legacy.Help;
 import com.lglab.merino.lgxeducontroller.legacy.LGPCAdminActivity;
 
 
-public class MainActivity extends GoogleDriveActivity {
+public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
     private Context context;
@@ -80,7 +81,6 @@ public class MainActivity extends GoogleDriveActivity {
         dialog.show();
     }
 
-    @Override
     public void handleStringFromDrive(String input) {
         //Nothing here...
     }
